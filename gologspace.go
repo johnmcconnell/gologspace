@@ -22,7 +22,7 @@ func LogAdd(logX, logY float64) float64 {
 		return logX
 	}
 	negDiff := logY - logX
-	if negDiff < 20.0 {
+	if negDiff < -20.0 {
 		return logX
 	}
 	return logX + math.Log(1.0 + math.Exp(negDiff))
