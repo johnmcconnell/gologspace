@@ -50,8 +50,8 @@ func TestAdd(t *testing.T) {
 	s := LogSpace{}
 	L := 100
 	for x := 0; x < L; x += 10 {
-		xA := float64(2 * x + 1)
-		yA := float64(x - 25)
+		xA := float64(2 * x)
+		yA := float64(x + 25)
 		A := xA + yA
 		xB := s.Enter(xA)
 		yB := s.Enter(yA)
